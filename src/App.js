@@ -7,7 +7,7 @@ import Photo from "./features/Photo";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Suspense fallback={<div>Loading...</div>}>
         <BrowserRouter>
           <Header />
