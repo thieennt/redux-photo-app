@@ -22,10 +22,10 @@ InputField.defaultProps = {
 
 function InputField(props) {
   const { field, form, type, label, placeholder, disabled } = props;
+
   const { name } = field;
   const { errors, touched } = form;
   const showError = errors[name] && touched[name];
-  console.log("field", field);
 
   return (
     <FormGroup>

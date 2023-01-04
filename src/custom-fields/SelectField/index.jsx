@@ -29,8 +29,6 @@ function SelectField(props) {
 
   const selectedOption = options.find((option) => option.value === value);
 
-  console.log("selectedOption", selectedOption);
-
   const handleSelectedOptionChange = (selectedOption) => {
     const selectedValue = selectedOption
       ? selectedOption.value

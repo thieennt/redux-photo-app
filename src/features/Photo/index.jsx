@@ -15,7 +15,7 @@ const Photo = () => {
       <Routes>
         <Route index element={<MainPage />} />
         <Route path="add" element={<AddEditPage />} />
-        {/* <Route path=":photoId" element={<AddEditPage />} /> */}
+        <Route path=":photoId" element={<AddEditPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
