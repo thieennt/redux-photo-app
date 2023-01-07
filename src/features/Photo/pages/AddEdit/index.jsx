@@ -3,7 +3,7 @@ import Banner from "../../../../components/Banner";
 import PhotoForm from "../../components/PhotoForm";
 import "./styles.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { addPhotos, updatePhoto } from "../../photoSlice";
+import { addPhoto, updatePhoto } from "../../photoSlice";
 import { useNavigate, useParams } from "react-router-dom";
 import { randomNumber } from "../../../../utils/common";
 
@@ -32,7 +32,7 @@ const AddEditPage = () => {
           ...values,
           id: randomNumber(1000, 9999),
         };
-        const actions = addPhotos(newPhoto);
+        const actions = addPhoto(newPhoto);
         dispatch(actions);
       } else {
         const action = updatePhoto(values);

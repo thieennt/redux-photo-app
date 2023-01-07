@@ -22,10 +22,10 @@ const Header = () => {
           <Col xs="auto">
             <NavLink
               className="header__link"
-              to="/photos"
+              to="/sign-in"
               // activeClassName="header__link--active"
             >
-              Redux Project
+              Sign In
             </NavLink>
           </Col>
         </Row>

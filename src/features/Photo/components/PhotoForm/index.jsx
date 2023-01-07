@@ -43,6 +43,7 @@ function PhotoForm(props) {
         // do something here ...
         const { values, errors, touched, isSubmitting } = formikProps;
         console.log({ values, errors, touched, isSubmitting });
+        console.log("isSubmit", isSubmitting);
 
         return (
           <Form>
